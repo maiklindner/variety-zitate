@@ -20,7 +20,10 @@ class ZitateSource(IQuoteSource):
             "author": "Maik Lindner",
             "version": "0.1"
         }
- 
+
+    def supports_search(self):
+        return False
+        
     def get_quote(self):
         url = "http://www.zitate.eu/beruehmte-personen/zitate/rss/zz0/feed.xml"
  
